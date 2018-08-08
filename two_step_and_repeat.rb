@@ -36,15 +36,15 @@ end
 def how_many_steps?
   steps = 0 
   loop do 
-  puts steps
-  steps = steps + 1
-  if steps%2 == 0 
-    puts "Left"
-  else 
-    puts "Right"
+    steps += 1 
+    puts steps 
+    if steps%2 == 0 
+      puts "Left"
+    else 
+      puts "Right"
+    end
+  sleep(0.5)
   end
-sleep(0.5)
-end
 end
 
 def break_dance
