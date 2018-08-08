@@ -62,5 +62,3 @@ if steps == 6
   break 
   steps = steps + 1
 end
-end
-end
