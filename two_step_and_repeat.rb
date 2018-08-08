@@ -1,20 +1,19 @@
 def first_steps
 first_steps = 0
-loop do first_steps == 10
-puts "Right foot back"
-sleep = (0.5)
-puts "Left foot back"
-sleep(0.5)
-puts "Right foot back"
-sleep(0.5)
-puts "Stop"
-sleep(1)  
-end
+loop do 
+    puts "Right foot back"
+    sleep = (0.5)
+    puts "Left foot back"
+    sleep(0.5)
+    puts "Right foot back"
+    sleep(0.5)
+    puts "Stop"
+    sleep(1)  
+  end
 end
 
 def a_few_more_steps
-a_few_more_steps = 0
-loop do a_few_more_steps == 10
+loop do 
 puts "Right foot back"
 sleep(0.5)
 puts "Left foot back"
@@ -51,12 +50,12 @@ end
 def break_dance
   steps = 0 
   loop do 
-  steps = steps + 1
+  steps += 1 
   puts steps
   if steps%2 == 0 
-    puts "left"
+    puts "Left"
   else 
-    puts "right" 
+    puts "Right" 
   end 
 sleep(0.5)
 if steps == 6 
