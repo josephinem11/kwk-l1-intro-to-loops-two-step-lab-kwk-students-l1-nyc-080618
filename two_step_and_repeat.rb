@@ -1,7 +1,7 @@
 def first_steps
 first_steps = 0
 loop do first_steps == 10
-puts right foot back
+puts "Right foot back"
 sleep = (0.5)
 puts "Left foot back"
 sleep(0.5)
@@ -36,10 +36,30 @@ end
 
 def how_many_steps?
   steps = 0 
-  
+  loop do 
+  puts steps
+  steps = steps + 1
+  if steps%2 == 0 
+    puts left
+  else 
+    puts right 
+sleep(0.5)
+end
 end
 
 def break_dance
-  # Write a solution that uses the same code as how_many_steps?, but breaks the
-  # loop if steps is equal to 6
+  steps = 0 
+  loop do 
+  steps = steps + 1
+  puts steps
+  if steps%2 == 0 
+    puts left
+  else 
+    puts right 
+sleep(0.5)
+if steps == 6 
+  break 
+  steps = steps + 1
 end
+end
+
