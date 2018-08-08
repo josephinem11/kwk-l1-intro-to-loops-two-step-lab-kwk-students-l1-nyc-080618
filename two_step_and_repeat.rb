@@ -36,7 +36,7 @@ end
 def how_many_steps?
   steps = 0 
   loop do 
-    steps += 1 
+    steps 1 
     puts steps 
     if steps%2 == 0 
       puts "Left"
